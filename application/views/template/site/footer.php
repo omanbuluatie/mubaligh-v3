@@ -38,16 +38,16 @@
                             <li><a href="<?php echo URL_VIEW_TERMS_AND_CONDITIONS; ?>"><?php echo get_languageword('terms_And_Conditons');?></a></li>
                             <?php if(!$this->ion_auth->logged_in()  || !$this->ion_auth->is_tutor() ){
                                 if(!$this->ion_auth->is_institute()){ ?>
-                            <li><a href="<?php echo URL_HOME_SEARCH_TUTOR; ?>"><?php echo get_languageword('Search for a Tutor');?></a></li><?php } } ?>
+                            <!-- <li><a href="<?php echo URL_HOME_SEARCH_TUTOR; ?>"><?php echo get_languageword('Search for a Tutor');?></a></li><?php } } ?> -->
                             <?php if(!$this->ion_auth->logged_in()  || !($this->ion_auth->is_student() || is_inst_tutor($this->ion_auth->get_user_id()))){ ?>
-                            <li><a href="<?php echo URL_HOME_SEARCH_STUDENT_LEADS; ?>"><?php echo get_languageword('Search for a Student');?></a></li><?php } ?>
+                            <!-- <li><a href="<?php echo URL_HOME_SEARCH_STUDENT_LEADS; ?>"><?php echo get_languageword('Search for a Student');?></a></li><?php } ?> -->
                             <?php if(!$this->ion_auth->logged_in()){ ?>
                             <li><a href="<?php echo URL_AUTH_LOGIN; ?>"><?php echo get_languageword('Become a Tutor');?></a></li><?php } ?>
                             <li><a href="<?php echo URL_HOME_CONTACT_US; ?>"><?php echo get_languageword('Contact Us');?></a></li>
                         </ul>
                     </div>
 
-                    <?php
+                    <!-- <?php
                             $locations = $this->home_model->get_locations(array('child' => true, 'limit' => 7));
                             if(!empty($locations)) {
                     ?>
@@ -59,9 +59,9 @@
                             <?php } ?>
                         </ul>
                     </div>
-                    <?php } ?>
+                    <?php } ?> -->
 
-                    <?php
+                    <!-- <?php
                             $courses = $this->home_model->get_courses(array('limit' => 7));
                             if(!empty($courses)) {
                     ?>
@@ -73,31 +73,31 @@
                             <?php } ?>
                         </ul>
                     </div>
-                    <?php } ?>
+                    <?php } ?> -->
 
-                    <?php
+                    <!-- <?php
                     if((isset($this->config->item('site_settings')->show_team) && $this->config->item('site_settings')->show_team == 'Yes')) {
                     $team =  $this->base_model->fetch_records_from('team', array('status' => 'Active'), '*', 'name', '', 0, 3);
                     if(!empty($team))
                     {
-                    ?>
-                    <div class="col-sm-3">
+                    ?> -->
+                    <!-- <div class="col-sm-3">
                         <h4 class="footer-head"><?php echo get_languageword('meet the team');?></h4>
                         <?php foreach($team as $t) { ?>
-                        <div class="media media-team">
+                        <div class="media media-team"> -->
                             <!--<a href="#">-->
-                                <figure class="imghvr-zoom-in">
+                                <!-- <figure class="imghvr-zoom-in">
                                     <img class="media-object  img-circle" src="<?php echo URL_PUBLIC_UPLOADS2;?>team/<?php echo $t->image?>" alt="...">
                                     <figcaption></figcaption>
                                 </figure>
                                 <h4><?php echo $t->name;?></h4>
-                                <p><u><?php echo $t->position;?></u></p>
+                                <p><u><?php echo $t->position;?></u></p> -->
                                 <!--</a>-->
-                        </div>
+                        <!-- </div>
                         <?php } ?>
                         </div>
                     <?php }
-                    } ?>
+                    } ?> -->
                 </div>
             </div>
             <?php
