@@ -33,107 +33,6 @@
          } ?>
     <!-- Ends Advantages #homepage -->
 
-
-    <!-- Our-Popular #homepage -->
-    <?php if(!empty($popular_courses)) { ?>
-    <section class="our-popular">
-        <div class="container">
-            <div class="row-margin">
-                <div class="row ">
-                    <div class="col-sm-12 ">
-                        <h2 class="heading"><?php echo get_languageword('our_popular_courses'); ?></h2>
-                    </div>
-
-                    <?php foreach ($popular_courses as $key => $courses) { 
-
-                            $category = explode('_', $key);
-
-                            //Category Details
-                            $category_id   = $category[0];
-                            $category_slug = $category[1];
-                            $category_name = $category[2];
-
-                        ?>
-
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="pop-list">
-                            <a href=<?php echo URL_HOME_ALL_COURSES.'/'.$category_slug;?> class="link-all"><?php echo get_languageword('see_all'); ?></a>
-                            <h3 class="heading-line" title="<?php echo $category_name; ?>"><?php echo $category_name; ?></h3>
-                            <ul>
-                                <?php foreach ($courses as $key => $value) {
-
-                                        $course   = explode('_', $value);
-                                        //Course Details
-                                        $course_id   = $course[0];
-                                        $course_slug = $course[1];
-                                        $course_name = $course[2];
-
-                                 ?>
-                                    <li><a href="<?php echo URL_HOME_SEARCH_TUTOR.'/'.$course_slug;?>" title="<?php echo $course_name; ?>"><?php echo $course_name; ?></a></li>
-                                <?php } ?>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <?php } ?>
-
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 text-center">
-                        <div class="mtop4">
-                            <a href="<?php echo URL_HOME_ALL_COURSES; ?>" class="btn-link"><?php echo get_languageword('check_all_courses'); ?></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <?php } ?>
-    <!-- Ends Our-Popular #homepage -->
-
-
-    <!-- Featured-On #homepage -->
-    <?php if(strip_tags($this->config->item('site_settings')->featured_on_section) == "On") {
-
-            echo $this->config->item('sections')->Featured_On_Section;
-
-         } ?>
-    <!-- Ends Featured-On #homepage -->
-
-    <!-- Lession-cards #homepage -->
-    <?php if(!empty($recent_courses)) { ?>
-    <section class="lession-cards">
-        <div class="container">
-            <div class="row row-margin">
-                <div class="col-sm-12 ">
-                    <h2 class="heading"><?php echo get_languageword('Recent Added');?> <span><?php echo get_languageword('Courses');?></span></h2>
-                </div>
-                <?php foreach($recent_courses as $row) { ?>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="lession-card">
-                        <a href="<?php echo URL_HOME_SEARCH_TUTOR.'/'.$row->slug;?>">
-                            <figure class="imghvr-zoom-in">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <img src="<?php echo get_course_img($row->image); ?>" class="img-responsive" alt="">
-                                        <figcaption></figcaption>
-                                    </div>
-                                    <div class="card-content">
-                                        <h4 class="card-title" title="<?php echo $row->name;?>"><?php echo $row->name;?></h4>
-                                        <p class="card-info animated fadeIn" title="<?php echo $row->description;?>"><?php if(!empty($row->description)) echo $row->description; else echo '&nbsp;';?></p>
-                                    </div>
-                                </div>
-                            </figure>
-                        </a>
-                    </div>
-                </div>
-                <?php } ?>
-            </div>
-        </div>
-    </section>
-    <?php } ?>
-    <!-- Ends Lession-cards #homepage -->
-
     <!-- How-it-works #homepage -->
     <?php $about_us_how_it_works = $this->base_model->get_page_how_it_works(); 
 
@@ -224,14 +123,6 @@
     </section>
     <!-- Ends Top-rated slider -->
 <?php } ?>
-    <!-- Call-to-register -->
-    <?php if(strip_tags($this->config->item('site_settings')->are_you_teacher_section) == "On") {
-
-            echo $this->config->item('sections')->Are_You_A_Teacher_Section;
-
-         } ?>
-    <!-- Call-to-register -->
-
 
 <link rel="stylesheet" href="<?php echo URL_FRONT_CSS;?>jquery.raty.css">
 <script src="<?php echo URL_FRONT_JS;?>jquery.raty.js"></script>
