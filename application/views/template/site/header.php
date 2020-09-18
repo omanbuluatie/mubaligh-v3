@@ -54,7 +54,7 @@
     <!-- Ends Preloader -->
 
     <!-- Top bar -->
-    <?php if(strip_tags($this->config->item('site_settings')->top_most_section) == "On") { ?>
+    <!-- <?php if(strip_tags($this->config->item('site_settings')->top_most_section) == "On") { ?>
     <div class="navbar-inverse top-bar">
         <div class="container">
             <ul class="nav navbar-nav top-nav-left">
@@ -68,7 +68,7 @@
 			<?php } ?>
         </div>
     </div>
-    <?php } ?>
+    <?php } ?> -->
     <!-- Ends Topbar -->
 
     <!-- Nagigation -->
