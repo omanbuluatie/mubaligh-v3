@@ -38,9 +38,9 @@
                             <li><a href="<?php echo URL_VIEW_TERMS_AND_CONDITIONS; ?>"><?php echo get_languageword('terms_And_Conditons');?></a></li>
                             <?php if(!$this->ion_auth->logged_in()  || !$this->ion_auth->is_tutor() ){
                                 if(!$this->ion_auth->is_institute()){ ?>
-                            <!-- <li><a href="<?php echo URL_HOME_SEARCH_TUTOR; ?>"><?php echo get_languageword('Search for a Tutor');?></a></li><?php } } ?> -->
+                            <!-- <li><a href="<?php echo URL_HOME_SEARCH_TUTOR; ?>"><?php echo get_languageword('Search for a Tutor');?></a></li> --> <?php } } ?>
                             <?php if(!$this->ion_auth->logged_in()  || !($this->ion_auth->is_student() || is_inst_tutor($this->ion_auth->get_user_id()))){ ?>
-                            <!-- <li><a href="<?php echo URL_HOME_SEARCH_STUDENT_LEADS; ?>"><?php echo get_languageword('Search for a Student');?></a></li><?php } ?> -->
+                            <!-- <li><a href="<?php echo URL_HOME_SEARCH_STUDENT_LEADS; ?>"><?php echo get_languageword('Search for a Student');?></a></li> --> <?php } ?>
                             <?php if(!$this->ion_auth->logged_in()){ ?>
                             <li><a href="<?php echo URL_AUTH_LOGIN; ?>"><?php echo get_languageword('Become a Tutor');?></a></li><?php } ?>
                             <li><a href="<?php echo URL_HOME_CONTACT_US; ?>"><?php echo get_languageword('Contact Us');?></a></li>
@@ -84,20 +84,20 @@
                     <!-- <div class="col-sm-3">
                         <h4 class="footer-head"><?php echo get_languageword('meet the team');?></h4>
                         <?php foreach($team as $t) { ?>
-                        <div class="media media-team"> -->
-                            <!--<a href="#">-->
-                                <!-- <figure class="imghvr-zoom-in">
+                        <div class="media media-team">
+                            <a href="#">
+                                <figure class="imghvr-zoom-in">
                                     <img class="media-object  img-circle" src="<?php echo URL_PUBLIC_UPLOADS2;?>team/<?php echo $t->image?>" alt="...">
                                     <figcaption></figcaption>
                                 </figure>
                                 <h4><?php echo $t->name;?></h4>
-                                <p><u><?php echo $t->position;?></u></p> -->
-                                <!--</a>-->
-                        <!-- </div>
+                                <p><u><?php echo $t->position;?></u></p>
+                                </a>
+                        </div>
                         <?php } ?>
                         </div>
                     <?php }
-                    } ?> -->
+                    } ?>  -->
                 </div>
             </div>
             <?php
