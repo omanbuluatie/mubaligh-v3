@@ -201,7 +201,8 @@
 					} ?>
 
 					<?php if(isset($this->config->item('site_settings')->land_line) && $this->config->item('site_settings')->land_line != '') { ?>
-                    <li class="visible-xs"><a href="javascript:void(0);"><i class="fa fa-phone top-bar-icn"></i><?php echo get_languageword('Call');?> : <?php echo $this->config->item('site_settings')->land_line;?></a></li>
+                    <!-- Disable Telpon CS -->
+                    <!-- <li class="visible-xs"><a href="javascript:void(0);"><i class="fa fa-phone top-bar-icn"></i><?php echo get_languageword('Call');?> : <?php echo $this->config->item('site_settings')->land_line;?></a></li> -->
 					<?php } ?>
                 </ul>
             </div>
