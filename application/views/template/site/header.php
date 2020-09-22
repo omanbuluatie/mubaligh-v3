@@ -134,7 +134,7 @@
                     <!-- <li><a class="<?php if(isset($activemenu) && $activemenu == "buy_courses") echo 'active'; ?>" href="<?php echo URL_HOME_BUY_COURSES;?>"> <?php echo get_languageword('Buy_Courses');?> </a></li> -->
                     <?php } ?>
 
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                         <a class="<?php if(isset($activemenu) && $activemenu == "blog") echo 'active'; ?>" href="#"><?php echo get_languageword('pages');?>  <span class="caret"></span></a>
                         <ul class="dropdown-menu vertical-megamenu" role="menu">
                             <li><a href="<?php echo URL_HOME_ABOUT_US;?>"><?php echo get_languageword('About Us');?></a></li>
@@ -152,7 +152,7 @@
                             <?php } ?>
 
                         </ul>
-                    </li>
+                    </li> -->
 
 
                     <?php if (!$this->ion_auth->logged_in()) { ?>
