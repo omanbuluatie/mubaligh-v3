@@ -46,12 +46,13 @@
 			</div>
 		</div>
 
-		<div class="col-md-4 pad10">
+		<!-- Disable Dashboard  -->
+		<!-- <div class="col-md-4 pad10">
 			<div class="dash-block d-block8">
 				<h2><?php echo $student_dashboard_data['inst_enrolled'];?><a class="pull-right" href="<?php echo base_url();?>student/enrolled-courses"><?php echo get_languageword('View');?></a></h2>
 				<p><?php echo get_languageword('Institue Enrolled Courses');?></p>
 			</div>
-		</div>
+		</div> -->
 
 		
 	</div>

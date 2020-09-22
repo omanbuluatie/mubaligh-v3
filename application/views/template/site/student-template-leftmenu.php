@@ -48,7 +48,8 @@
 </div>
 <!-- /.panel -->
 
-<div class="dashboard-link"><a <?php if(isset($activemenu) && $activemenu == 'enrolled_courses') echo 'class="active"';?> href="<?php echo URL_STUDENT_ENROLLED_COURSES ?>"><i class="fa fa-book"></i><?php echo get_languageword('Enrolled Courses');?></a></div>
+<!-- Disable Enrolled Course -->
+<!-- <div class="dashboard-link"><a <?php if(isset($activemenu) && $activemenu == 'enrolled_courses') echo 'class="active"';?> href="<?php echo URL_STUDENT_ENROLLED_COURSES ?>"><i class="fa fa-book"></i><?php echo get_languageword('Enrolled Courses');?></a></div> -->
 
 
 <div class="panel panel-default">
@@ -94,8 +95,8 @@
 </div>
 <!-- /.panel -->
 
-
-<div class="dashboard-link"><a <?php if(isset($activemenu) && $activemenu == 'my_course_purchases') echo 'class="active"';?> href="<?php echo URL_STUDENT_COURSE_PURCHASES; ?>"><i class="fa fa-book"></i><?php echo get_languageword('My_Course_Purchases');?></a></div>
+<!-- Disable -->
+<!-- <div class="dashboard-link"><a <?php if(isset($activemenu) && $activemenu == 'my_course_purchases') echo 'class="active"';?> href="<?php echo URL_STUDENT_COURSE_PURCHASES; ?>"><i class="fa fa-book"></i><?php echo get_languageword('My_Course_Purchases');?></a></div> -->
 
 
 
@@ -121,16 +122,17 @@
 </div>
 <!-- /.panel -->
 
-<div class="panel panel-default">
+<!-- Disable Menu Manage -->
+<!-- <div class="panel panel-default">
 	<div class="panel-heading">
 		<h4 class="panel-title">
 		<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseManage">
 			<i class="fa fa-credit-card"></i><?php echo get_languageword('Manage')?>
 		</a>
 	</h4>
-	</div>
+	</div> -->
 	<!--/.panel-heading -->
-	<div id="collapseManage" class="panel-collapse <?php if(isset($activemenu) && $activemenu == 'manage') echo 'collapse in'; else echo 'collapse';?>">
+	<!-- <div id="collapseManage" class="panel-collapse <?php if(isset($activemenu) && $activemenu == 'manage') echo 'collapse in'; else echo 'collapse';?>">
 		<div class="panel-body">
 			<ul class="dashboard-links">
 				<li <?php if(isset($activesubmenu) && $activesubmenu == 'manage_courses') echo 'class="active"';?>><a href="<?php echo URL_STUDENT_MANAGE_COURSES;?>"><?php echo get_languageword('courses');?> </a></li>
@@ -139,11 +141,11 @@
 				<li <?php if(isset($activesubmenu) && $activesubmenu == 'certificates') echo 'class="active"';?>><a href="<?php echo URL_STUDENT_CERTIFICATES ?>"><?php echo get_languageword('Certificates');?></a></li>
 				<li <?php if(isset($activesubmenu) && $activesubmenu == 'manage_privacy') echo 'class="active"';?>><a href="<?php echo URL_STUDENT_MANAGE_PRIVACY ?>"><?php echo get_languageword('Privacy');?></a></li>
 			</ul>
-		</div>
+		</div> -->
 		<!--/.panel-body -->
-	</div>
+	<!-- </div> -->
 	<!--/.panel-collapse -->
-</div>
+<!-- </div> -->
 <!-- /.panel -->
 
 <div class="panel panel-default">
