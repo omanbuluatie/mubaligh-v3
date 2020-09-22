@@ -787,11 +787,12 @@ class Auth extends MY_Controller {
 					}
 					else if($this->ion_auth->is_student()) {
 
-						if($is_profile_updated != 1) {
+						// Disable Verifikasi Murid
+						// if($is_profile_updated != 1) {
 
-							$this->prepare_flashmessage(get_languageword('please_update_your_profile_by_adding_preferred_courses_and_preferred_teaching_types_to_get_tutors'), 2);
-							redirect(URL_STUDENT_MANAGE_COURSES, 'refresh');
-						}
+						// 	$this->prepare_flashmessage(get_languageword('please_update_your_profile_by_adding_preferred_courses_and_preferred_teaching_types_to_get_tutors'), 2);
+						// 	redirect(URL_STUDENT_MANAGE_COURSES, 'refresh');
+						// }
 
 						redirect(URL_STUDENT_INDEX, 'refresh');
 					}
