@@ -10,8 +10,10 @@
 				<img class="media-object  img-circle" src="<?php echo get_student_img($my_profile->photo, $my_profile->gender); ?>" alt="<?php echo $my_profile->first_name;?> <?php echo $my_profile->last_name;?>">
 				<figcaption></figcaption>
 			</figure>
+			<div class="media-body">
 			<h4><?php echo $my_profile->first_name;?> <?php echo $my_profile->last_name;?></h4>
 			<p><?php echo get_languageword('User Login');?>: <?php echo date('d/m/Y H:i:s',$my_profile->last_login );?></p>
+			</div>
 			<p><?php echo get_languageword('net_credits');?>: <strong><?php echo get_user_credits($user_id);?></strong>
 
                 <span class="pull-right"><?php echo get_languageword('per_credit_value');?>: <strong><?php echo get_system_settings('currency_symbol').get_system_settings('per_credit_value');?></strong></span></p>
