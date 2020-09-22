@@ -5,6 +5,7 @@
 !*/cache/index.html
 !*/cache/.htaccess
 
+error_log
 application/config/database.php
 application/cache/*
 assets/uploads/*
