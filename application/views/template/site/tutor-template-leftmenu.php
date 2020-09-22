@@ -106,29 +106,29 @@
 </div>
 
 
-
-<div class="panel panel-default">
+<!-- Disable Sell Course -->
+<!-- <div class="panel panel-default">
 	<div class="panel-heading">
 		<h4 class="panel-title">
 		<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSellCourses">
             <i class="fa fa-book"></i><?php echo get_languageword('Sell_Courses_Online')?>
 		</a>
 	</h4>
-	</div>
+	</div> -->
 	<!--/.panel-heading -->
-	<div id="collapseSellCourses" class="panel-collapse <?php if(isset($activemenu) && $activemenu == 'sell_courses_online') echo 'collapse in'; else echo 'collapse';?>">
+	<!-- <div id="collapseSellCourses" class="panel-collapse <?php if(isset($activemenu) && $activemenu == 'sell_courses_online') echo 'collapse in'; else echo 'collapse';?>">
 		<div class="panel-body">
 			<ul class="dashboard-links">
 				<li <?php if(isset($activesubmenu) && $activesubmenu == 'publish') echo 'class="active"';?>><a href="<?php echo URL_TUTOR_SELL_COURSES_ONLINE;?>"><?php echo get_languageword('publish');?> </a></li>
 				<li <?php if(isset($activesubmenu) && $activesubmenu == 'list') echo 'class="active"';?>><a href="<?php echo URL_TUTOR_LIST_SELLING_COURSES;?>"><?php echo get_languageword('List_Selling_Courses');?> </a></li>
 			</ul>
-		</div>
+		</div> -->
 		<!--/.panel-body -->
-	</div>
+	<!-- </div> -->
 	<!--/.panel-collapse -->
-</div>
+<!-- </div> -->
 
-<div class="dashboard-link"><a <?php if(isset($activemenu) && $activemenu == 'purchased_courses') echo 'class="active"';?> href="<?php echo URL_TUTOR_PURCHASED_COURSES; ?>"><i class="fa fa-money"></i><?php echo get_languageword('Purchased_Courses');?></a></div>
+<!-- <div class="dashboard-link"><a <?php if(isset($activemenu) && $activemenu == 'purchased_courses') echo 'class="active"';?> href="<?php echo URL_TUTOR_PURCHASED_COURSES; ?>"><i class="fa fa-money"></i><?php echo get_languageword('Purchased_Courses');?></a></div> -->
 
 
 <div class="panel panel-default">
