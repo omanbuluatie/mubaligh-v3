@@ -43,6 +43,7 @@
                             <!-- <li><a href="<?php echo URL_HOME_SEARCH_STUDENT_LEADS; ?>"><?php echo get_languageword('Search for a Student');?></a></li> --> <?php } ?>
                             <?php if(!$this->ion_auth->logged_in()){ ?>
                             <li><a href="<?php echo URL_AUTH_LOGIN; ?>"><?php echo get_languageword('Become a Tutor');?></a></li><?php } ?>
+                            <li><a href="<?php echo URL_HOME_FAQS;?>"><?php echo get_languageword('FAQs');?></a></li>
                             <li><a href="<?php echo URL_HOME_CONTACT_US; ?>"><?php echo get_languageword('Contact Us');?></a></li>
                         </ul>
                     </div>
