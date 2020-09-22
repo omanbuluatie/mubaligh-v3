@@ -6,10 +6,12 @@
 	?>
 	<div class="media media-team">
 		<a href="<?php echo base_url();?>student/index">
+		<div class="media-left">
 			<figure class="imghvr-zoom-in">
 				<img class="media-object  img-circle" src="<?php echo get_student_img($my_profile->photo, $my_profile->gender); ?>" alt="<?php echo $my_profile->first_name;?> <?php echo $my_profile->last_name;?>">
 				<figcaption></figcaption>
 			</figure>
+			</div>
 			<div class="media-body">
 			<h4><?php echo $my_profile->first_name;?> <?php echo $my_profile->last_name;?></h4>
 			<p><?php echo get_languageword('User Login');?>: <?php echo date('d/m/Y H:i:s',$my_profile->last_login );?></p>
