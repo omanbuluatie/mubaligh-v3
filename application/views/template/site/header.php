@@ -181,7 +181,7 @@
 
 						?>
                         <?php if(!$this->ion_auth->is_student()) { ?>
-                        <li><a class="<?php if(isset($activemenu) && $activemenu == "contact_us") echo 'active'; ?>" href="<?php echo URL_HOME_CONTACT_US;?>"> <?php echo get_languageword('Contact Us');?> </a></li>
+                        <!-- <li><a class="<?php if(isset($activemenu) && $activemenu == "contact_us") echo 'active'; ?>" href="<?php echo URL_HOME_CONTACT_US;?>"> <?php echo get_languageword('Contact Us');?> </a></li> -->
                         <?php } else { ?>
                         <style>
                             .nav > li > a {
