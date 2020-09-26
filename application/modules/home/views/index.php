@@ -18,9 +18,10 @@
                     <!-- Home Search form -->
                 </div>
                 <?php } ?>
-                <div class="col-sm-12">
+                <!-- Disable Gambar Icon Background -->
+                <!-- <div class="col-sm-12">
                     <img src="<?php echo URL_FRONT_IMAGES;?>headericons.png" alt="" class="img-responsive">
-                </div>
+                </div> -->
             </div>
         </div>
     </section>

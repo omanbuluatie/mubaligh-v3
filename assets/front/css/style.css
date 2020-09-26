@@ -1130,7 +1130,9 @@ Topbar - navbar-inverse
 }
 
 .navbar-inverse {
-    background: #534051;
+    /* background: #534051; */
+    background: rgb(43,74,92);
+    background: linear-gradient(90deg, rgba(43,74,92,1) 0%, rgba(40,81,79,1) 50%, rgba(35,70,66,1) 100%);
     color: #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
@@ -1175,7 +1177,9 @@ Main Navigation bar  - Navbar-default
 ---------------------------------------- */
 
 .navbar-default {
-    background: #534051;
+    /* background: #534051; */
+    background: rgb(43,74,92);
+    background: linear-gradient(90deg, rgba(43,74,92,1) 0%, rgba(40,81,79,1) 50%, rgba(35,70,66,1) 100%);  
     padding: 20px 0px 20px 0;
     z-index: 1;
 }
@@ -1232,7 +1236,9 @@ Main Navigation bar  - Navbar-default
 }
 
 .nav-btn:hover {
-    background: #534051;
+    /* background: #534051; */
+    background: rgb(43,74,92);
+    background: linear-gradient(90deg, rgba(43,74,92,1) 0%, rgba(40,81,79,1) 50%, rgba(35,70,66,1) 100%);
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
     -webkit-transition: 0.3s;
@@ -2014,7 +2020,9 @@ Side bar / Widget bar
 ---------------------------------- */
 
 .header-homepage {
-    background-color: #534051;
+    /* background-color: #534051; */
+    background: rgb(43,74,92);
+    background: linear-gradient(90deg, rgba(43,74,92,1) 0%, rgba(40,81,79,1) 50%, rgba(35,70,66,1) 100%);   
 }
 
 .header-margin {
