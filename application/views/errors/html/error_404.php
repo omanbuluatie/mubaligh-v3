@@ -8,7 +8,7 @@
 <link href="../assets/front/css/bootstrap.min.css" rel="stylesheet">
 <style>
 body {
-	background-color: #534051;
+	background-color: #28514f;
 }
 .error-box {
 	color: #fff;

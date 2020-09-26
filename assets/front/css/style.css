@@ -4919,7 +4919,9 @@ Media Queries for Responsive
         margin-top: 20px;
     }
     .navbar-collapse {
-        background: #655063;
+        /* background: #655063; */
+        background: rgb(43,74,92);
+        background: linear-gradient(90deg, rgba(43,74,92,1) 0%, rgba(40,81,79,1) 50%, rgba(35,70,66,1) 100%);
         margin-top: 5px;
     }
     .mtop7 {
