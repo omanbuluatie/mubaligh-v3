@@ -83,7 +83,9 @@
     <!-- Ends Testimonial slider -->
 
     <!-- Counter #Homepage -->
-    <?php $this->load->view('lesson_count.php'); ?>
+    <!-- Disable terlebih dahulu jumlah pengaajaran -->
+    <?php 
+    // $this->load->view('lesson_count.php'); ?>
     <!-- Counter #Homepage -->
 
     <?php if(!empty($home_tutor_ratings)) {?>
