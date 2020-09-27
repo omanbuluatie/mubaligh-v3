@@ -154,12 +154,17 @@
                         </ul>
                     </li> -->
 
-
+                    <!-- Tombol Login & Register -->
                     <?php if (!$this->ion_auth->logged_in()) { ?>
-					<li>
+                    <!-- <ul id="top_menu"> -->
+			        <li><a href="<?php echo URL_AUTH_LOGIN;?>" > <span class="nav-btn"> <i class="fa  fa-sign-in"></i> &nbsp; <?php echo get_languageword('Login');?></a></li>
+			        <li><a href="<?php echo URL_AUTH_LOGIN;?>" > <span class="nav-btn-green"> <i class="fa  fa-user-plus"></i> &nbsp; <?php echo get_languageword('Register');?></a></li>
+		            <!-- </ul> -->
+                    <!-- Ganti Tombol Login -->
+                    <!-- <li>
                         <a href="<?php echo URL_AUTH_LOGIN;?>"> <span class="nav-btn"> <i class="fa  fa-sign-in"></i> &nbsp; <?php echo get_languageword('Login');?> <span class="hidden-navbtn"><?php echo get_languageword('Or');?> <?php echo get_languageword('Register');?></span></span>
                         </a>
-                    </li>
+                    </li> -->
 					<?php } else {
 						$url = base_url().'tutor/index';
 						$ctrl = 'tutor';
@@ -168,11 +173,11 @@
 							$url = base_url().'student/index';
 							$ctrl = 'student';
 						}
-                        elseif($this->ion_auth->is_institute())
-                        {
-                            $url = base_url().'institute/index';
-                            $ctrl = 'institute';
-                        }
+                        // elseif($this->ion_auth->is_institute())
+                        // {
+                        //     $url = base_url().'institute/index';
+                        //     $ctrl = 'institute';
+                        // }
                         elseif($this->ion_auth->is_admin())
                         {
                             $url = base_url().'admin/index';
