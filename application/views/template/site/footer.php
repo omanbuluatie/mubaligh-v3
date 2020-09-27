@@ -106,7 +106,7 @@
 
             if((isset($this->config->item('site_settings')->androd_app) && $this->config->item('site_settings')->androd_app != '') || (isset($this->config->item('site_settings')->ios_app) && $this->config->item('site_settings')->ios_app != '')) { ?>
             <div class="col-lg-3 col-md-6 col-sm-6">
-                <h4 class="footer-color-head"><?php echo get_languageword('Find a tutor fast');?>. <span><?php echo get_languageword('Get our app');?></span>.</h4>
+                <h4 class="footer-color-head"><span><?php echo get_languageword('Get our app');?></span>.</h4>
                 <p class="footer-text"><?php echo get_languageword('Send a download link to your mail');?>.</p>
                 <div class="footer-newsletter">
                     <?php echo form_open('/', 'id="send_app_link_form" class="newsletter-form"'); ?>
