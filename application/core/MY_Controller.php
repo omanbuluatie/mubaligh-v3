@@ -39,7 +39,7 @@ class MY_Controller extends CI_Controller
 
 			$redirect_path = $this->data['current_controller'].'/'.$this->data['current_method'];
 
-			$allowed_urls = array('auth/login', 'auth/login2', 'home/search_tutor', 'home/search_institute', 'home/search_student_leads', 'institute/enrolled_students', 'tutor/my_batches');
+			$allowed_urls = array('auth/login', 'home/search_tutor', 'home/search_institute', 'home/search_student_leads', 'institute/enrolled_students', 'tutor/my_batches');
 
 			$restricted_urls = array('institute/approve_batch_students', 'institute/send_credits_conversion_request', 'tutor/initiate_batch_session', 'tutor/complete_batch_session');
 

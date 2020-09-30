@@ -1579,8 +1579,6 @@ if ( ! function_exists( 'safe_redirect')) {
 		$new_url = '';
 		if( ! $CI->ion_auth->logged_in() ) {
 			$new_url = 'auth/login';
-		} elseif( $CI->ion_auth->sign_up2() ) {
-			$new_url = 'auth/login2';
 		} elseif( $CI->ion_auth->is_tutor() ) {
 			$new_url = 'tutor/index';
 		} elseif( $CI->ion_auth->is_student() ) {
