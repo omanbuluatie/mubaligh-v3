@@ -157,8 +157,8 @@
                     <!-- Tombol Login & Register -->
                     <?php if (!$this->ion_auth->logged_in()) { ?>
                     <!-- <ul id="top_menu"> -->
-			        <li><a href="<?php echo URL_AUTH_LOGIN;?>" > <span class="nav-btn"> <i class="fa  fa-sign-in"></i> &nbsp; <?php echo get_languageword('Login');?></a></li>
-			        <li><a href="<?php echo URL_AUTH_LOGIN;?>" > <span class="nav-btn-green"> <i class="fa  fa-user-plus"></i> &nbsp; <?php echo get_languageword('Register');?></a></li>
+			        <li><a href="<?php echo URL_AUTH_LOGIN;?>" > <span class="nav-btn"> &nbsp; <?php echo get_languageword('Login');?></a></li>
+			        <li><a href="<?php echo URL_AUTH_LOGIN;?>" > <span class="nav-btn-green"> &nbsp; <?php echo get_languageword('Register');?></a></li>
 		            <!-- </ul> -->
                     <!-- Ganti Tombol Login -->
                     <!-- <li>
