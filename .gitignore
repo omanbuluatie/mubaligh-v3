@@ -9,6 +9,7 @@ error_log
 application/config/database.php
 application/cache/*
 assets/uploads/*
+.htaccess
 
 #codeigniter 3
 application/logs/*
